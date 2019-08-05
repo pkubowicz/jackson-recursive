@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // switch version to 2.9.9.1 and the test will pass
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9.2'
+
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.9'
+
+    testImplementation 'junit:junit:4.12'
+}
